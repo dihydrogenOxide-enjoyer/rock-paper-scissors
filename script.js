@@ -4,7 +4,6 @@ console.log("Hello, World!");
 function randomInt(){
     return Math.floor(Math.random() * 3);
 }
-console.log(randomInt());
 
 // returns Rock, paper, scissors randomly by matching
 // randomInt values
@@ -22,3 +21,10 @@ function getComputerChoice(){
     }
 }
 console.log(getComputerChoice());
+
+function getHumanChoice(){
+    return prompt("rock-paper-scissors", "rock");
+}
+console.log(getHumanChoice())
+
+
