@@ -1,5 +1,57 @@
 console.log("Hello, World!");
 
+//1. GET computer choice
+//   - OBTAIN 0, 1, 2 randomly
+//   - SWITCH 0, 1, 2
+//       - CASE 0: "rock"
+//       - CASE 1: "paper"
+//       - CASE 2: "scissors"
+//2. GET human choice
+//   - READ prompt from user
+//   - RETURN user's response
+//3. SET scores: human and computer
+//   - INITIALIZE humanScore and computerScore variables 
+//     with 0.
+//4. OBTAIN case insensitive human choice
+//5. Play round
+//   IF humanChoice and computerChoice are equal THEN
+//     RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "rock" and computerChoice is "paper"
+//     INCREMENT humanScore
+//     RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "rock" and computerChoice is "paper"
+//     INCREMENT computerScore
+//     RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "scissors" and computerChoice is "paper"
+//      INCREMENT humanScore
+//      RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "scissors" and computerChoice is "rock"
+//      INCREMENT computerScore
+//      RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "paper" and computerChoice is "rock"
+//      INCREMENT humanScore
+//      RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "rock" and computerChoice is "scissors"
+//      INCREMENT humanScore
+//      RETURN string with scores embedded and round result
+//   ELSE IF humanChoice is "paper" and computerChoice is "scissors"
+//      INCREMENT computerScore
+//      RETURN string with scores embedded and round result
+//   ENDIF
+//6. INITTIALIZE variable named count with 0
+//7. Play game
+//   SEQUENCE
+//   - INCREMENT count
+//   - DISPLAY playRound to console
+//   - IF count < 5 THEN
+//      RETURN play game
+//   - ELSE RETURN string with count, humanScore, computerSCore
+//       embedded
+//   - ENDIF
+
+
+
+
 // returns 0, 1, 2 randomly
 function randomInt(){
     return Math.floor(Math.random() * 3);
@@ -26,6 +78,7 @@ function getHumanChoice(){
     return prompt("rock-paper-scissors", "rock");
 }
 // console.log(getHumanChoice())
+
 let humanScore = 0;
 let computerScore = 0;
 let count = 0;
